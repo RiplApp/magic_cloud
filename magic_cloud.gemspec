@@ -32,7 +32,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.2.2'
   
   s.add_dependency 'rmagick'
-  s.add_dependency 'slop', '~> 3.0' # for bin/magic_cloud options parsing
+  # Hack to avoid gem version conflict
+  #s.add_dependency 'slop', '~> 3.0' # for bin/magic_cloud options parsing
   
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'bundler'
